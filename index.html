@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/jass.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Feathered Weather</title>
+</head>
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="app-title"><i class=""></i> Feathers of Weather!!</h1>
+        <p>
+            Find out the weather in your chosen city!
+        </p>
+    </header>
+
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <h3 class="card-header text-uppercase">Search By City!</h3>
+                <form id="local-form" class="card-body">
+                    <label class="form-label" for="cityName">City Name</label>
+                    <input
+                        name="cityName"
+                        id="cityName"
+                        type="text"
+                        autofocus="true"
+                        class="form-input"
+                    />
+                    <button type="submit" class="btn">Get User</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3 class="card-header text-uppercase">Quick-Click Cities!</h3>
+                <div id="city-buttons" class="card-body">
+                    <button type="city-button" class="btn">Atlanta</button>
+                    <button type="city-button" class="btn">Miami</button>
+                    <button type="city-button" class="btn">Troy</button>
+                    <button type="city-button" class="btn">Seattle</button>
+                    <button type="city-button" class="btn">Dallas</button>
+                    <button type="city-button" class="btn">Albany</button>
+                    <button type="city-button" class="btn">Venice</button>
+                    <button type="city-button" class="btn">Paris</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8">
+            <h2 class="subtitle">
+                Showing Weather Reports for: <span id="local-search-term"></span>
+            </h2>
+            <div id="local-container" class="list-group"></div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
